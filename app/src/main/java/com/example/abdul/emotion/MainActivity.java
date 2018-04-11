@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                 bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
 
                 Vision.Builder visionBuilder = new Vision.Builder(new NetHttpTransport(),new AndroidJsonFactory(),null);
-                visionBuilder.setVisionRequestInitializer(new VisionRequestInitializer("AIzaSyBL8_UGBRiNVJE8Bvq-cu2LLAS2JxCXs3k"));
+                visionBuilder.setVisionRequestInitializer(new VisionRequestInitializer("Subscription-key"));
                 final Vision vision = visionBuilder.build();
 
                 AsyncTask<Integer, String, String> detectTask =
